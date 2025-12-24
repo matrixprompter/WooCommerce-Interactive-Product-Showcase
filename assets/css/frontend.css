@@ -1,0 +1,10 @@
+/* Frontend Styles - minimal since most styles are inline in shortcode */
+
+.ips-showcase-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.ips-showcase-container * {
+    box-sizing: border-box;
+}

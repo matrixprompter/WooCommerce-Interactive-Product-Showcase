@@ -1,0 +1,263 @@
+/* Admin Styles */
+
+.ips-admin-wrap {
+    margin: 20px;
+}
+
+.ips-admin-wrap .nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+.ips-tab-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* Design Tab */
+.ips-design-settings .form-table th {
+    width: 200px;
+}
+
+.ips-color-picker {
+    max-width: 100px;
+}
+
+/* Add Image Tab */
+.ips-add-image-section {
+    max-width: 100%;
+}
+
+#ips-image-preview {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#ips-image-preview img {
+    display: block;
+}
+
+#ips-hotspot-editor {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#ips-image-container {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    background: #fff;
+    cursor: crosshair;
+}
+
+.ips-hotspot-marker {
+    width: 40px;
+    height: 40px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: move;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transform: translate(-50%, -50%);
+}
+
+.ips-hotspot-number {
+    pointer-events: none;
+}
+
+.ips-remove-hotspot {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    background: #dc3232;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ips-remove-hotspot:hover {
+    background: #a00;
+}
+
+/* Modal Styles */
+.ips-modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.ips-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 8px;
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.ips-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.ips-modal-close:hover,
+.ips-modal-close:focus {
+    color: #000;
+}
+
+.ips-product-search {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.ips-product-search input {
+    flex: 1;
+}
+
+.ips-product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.ips-product-item {
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.ips-product-item:hover {
+    border-color: #2271b1;
+    background: #f0f6fc;
+}
+
+.ips-product-item.selected {
+    border-color: #2271b1;
+    background: #e5f5ff;
+}
+
+.ips-product-item img {
+    max-width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.ips-product-item h4 {
+    margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+#ips-product-details {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#ips-product-details img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Images List Tab */
+.ips-images-list {
+    padding: 20px;
+}
+
+.ips-images-list table img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.ips-shortcode-input {
+    width: 300px;
+    margin-right: 10px;
+}
+
+.ips-copy-shortcode {
+    vertical-align: middle;
+}
+
+/* Messages */
+#ips-message {
+    margin: 20px 0;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+#ips-message.notice-success {
+    background: #e5f5e5;
+    border-left: 4px solid #46b450;
+    color: #155724;
+}
+
+#ips-message.notice-error {
+    background: #fef0f0;
+    border-left: 4px solid #dc3232;
+    color: #721c24;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .ips-product-list {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    .ips-modal-content {
+        width: 95%;
+        margin: 10% auto;
+        padding: 20px;
+    }
+}
